@@ -5,7 +5,7 @@ const express = require("express");
 const appChecker = require("./src/apps/app");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3338;
 
 ///working with cors
 app.use((req, res, next) => {
